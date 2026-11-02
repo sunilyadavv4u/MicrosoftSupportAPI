@@ -1,0 +1,10 @@
+resource,table,domain,file,expected_rows,column_count
+labor-approval,SrcLaborApproval,labor,data/labor/SrcLaborApproval.csv,24642,6
+labor-rate-exception,SrcLaborRateException,labor,data/labor/SrcLaborRateException.csv,600,7
+labor-transaction,SrcLaborTransaction,labor,data/labor/SrcLaborTransaction.csv,30129,13
+timesheet-entry,SrcTimesheetEntry,labor,data/labor/SrcTimesheetEntry.csv,640000,8
+kb-article,SrcKBArticle,kb,data/kb/SrcKBArticle.csv,14000,6
+kb-article-feedback,SrcKBArticleFeedback,kb,data/kb/SrcKBArticleFeedback.csv,60000,6
+kb-article-usage,SrcKBArticleUsage,kb,data/kb/SrcKBArticleUsage.csv,15110,7
+kb-article-view,SrcKBArticleView,kb,data/kb/SrcKBArticleView.csv,180000,6
+TOTAL,,,,964481,

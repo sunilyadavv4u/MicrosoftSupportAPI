@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+data/mock_api.db
+data/mock_api.db-shm
+data/mock_api.db-wal

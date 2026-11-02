@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "description": "Add a new CSV source by adding an entry to tables; resource is the URL slug.",
+  "tables": [
+    {
+      "resource": "labor-approval",
+      "table": "SrcLaborApproval",
+      "domain": "labor",
+      "file": "data/labor/SrcLaborApproval.csv",
+      "rows": 24642,
+      "columns": [
+        "LaborApprovalID",
+        "LaborTransactionID",
+        "TicketNumber",
+        "ApproverEmail",
+        "ApprovalStatus",
+        "ApprovalTimestamp"
+      ]
+    },
+    {
+      "resource": "labor-rate-exception",
+      "table": "SrcLaborRateException",
+      "domain": "labor",
+      "file": "data/labor/SrcLaborRateException.csv",
+      "rows": 600,
+      "columns": [
+        "RateExceptionCode",
+        "VendorCode",
+        "SupportLevel",
+        "ExceptionRateUSD",
+        "ExceptionReason",
+        "EffectiveFrom",
+        "EffectiveTo"
+      ]
+    },
+    {
+      "resource": "labor-transaction",
+      "table": "SrcLaborTransaction",
+      "domain": "labor",
+      "file": "data/labor/SrcLaborTransaction.csv",
+      "rows": 30129,
+      "columns": [
+        "LaborTransactionID",
+        "TicketID",
+        "TicketNumber",
+        "EmployeeEmail",
+        "VendorCode",
+        "SupportLevel",
+        "DeliveryCountry",
+        "WorkDate",
+        "ActivityType",
+        "HoursWorked",
+        "IsBillable",
+        "HourlyRateUSD",
+        "LastModifiedTimestamp"
+      ]
+    },
+    {
+      "resource": "timesheet-entry",
+      "table": "SrcTimesheetEntry",
+      "domain": "labor",
+      "file": "data/labor/SrcTimesheetEntry.csv",
+      "rows": 640000,
+      "columns": [
+        "TimesheetCode",
+        "EmployeeEmail",
+        "VendorCode",
+        "WeekStartDate",
+        "TotalHours",
+        "BillableHours",
+        "OvertimeHours",
+        "SubmissionStatus"
+      ]
+    },
+    {
+      "resource": "kb-article",
+      "table": "SrcKBArticle",
+      "domain": "kb",
+      "file": "data/kb/SrcKBArticle.csv",
+      "rows": 14000,
+      "columns": [
+        "ArticleCode",
+        "ProductCode",
+        "Title",
+        "ArticleType",
+        "PublishedDate",
+        "Status"
+      ]
+    },
+    {
+      "resource": "kb-article-feedback",
+      "table": "SrcKBArticleFeedback",
+      "domain": "kb",
+      "file": "data/kb/SrcKBArticleFeedback.csv",
+      "rows": 60000,
+      "columns": [
+        "FeedbackCode",
+        "ArticleCode",
+        "ReviewerEmail",
+        "Rating",
+        "WasHelpful",
+        "FeedbackDate"
+      ]
+    },
+    {
+      "resource": "kb-article-usage",
+      "table": "SrcKBArticleUsage",
+      "domain": "kb",
+      "file": "data/kb/SrcKBArticleUsage.csv",
+      "rows": 15110,
+      "columns": [
+        "KBUsageID",
+        "ArticleCode",
+        "TicketID",
+        "TicketNumber",
+        "ViewerEmail",
+        "ViewedTimestamp",
+        "WasUsedInResolution"
+      ]
+    },
+    {
+      "resource": "kb-article-view",
+      "table": "SrcKBArticleView",
+      "domain": "kb",
+      "file": "data/kb/SrcKBArticleView.csv",
+      "rows": 180000,
+      "columns": [
+        "ViewCode",
+        "ArticleCode",
+        "ViewerEmail",
+        "ViewTimestamp",
+        "TimeSpentSeconds",
+        "ViewSource"
+      ]
+    }
+  ]
+}
